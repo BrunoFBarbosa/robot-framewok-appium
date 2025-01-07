@@ -6,7 +6,9 @@ Library    libs/mongo.py
 Resource    screens/login.resource
 Resource    screens/tasks.resource
 
+*** Variables ***
 
+${EMULATOR_UDID}    emulator-5554
 
 *** Keywords ***
 
@@ -15,7 +17,7 @@ Start Session
     ...                 automationName=uiautomator2
     ...                 platformName=Android
     ...                 deviceName=Emulator
-    ...                 udid=emulator-5554
+    ...                 udid=${EMULATOR_UDID}
     ...                 autoGrantPermissions=true
     ...                 app=${EXECDIR}/apps/markx.apk
 
