@@ -19,7 +19,7 @@ To run this project, you will need:
 
 Before anything else, make sure you have installed [Java JDK](http://appium.io/docs/en/latest/quickstart/uiauto2-driver/#java-jdk) and [Android SDK](http://appium.io/docs/en/latest/quickstart/uiauto2-driver/#android-sdk) on your system. It is also important to set the environments variables `ANDROID_HOME` and `JAVA_HOME` correctly
 
-### 1. Clone this repository
+### 1. Clone This Repository
 
 ```
 git clone https://github.com/BrunoFBarbosa/robot-framewok-appium.git
@@ -69,7 +69,7 @@ Otherwise, the tool will tell you what needs to be fixed in the output
 
 ### 3. Create A MongoDB Instance
 
-The application uses a simple MongoDB database to store the data. To instantiated it, make sure you have Docker installed and run the following command in the repository root folder:
+The application uses a simple MongoDB database to store the data. In order to instantiate it, make sure you have Docker installed and run the following command in the repository's root folder:
 
 ```
 ~/robot-framework-appium
@@ -78,15 +78,15 @@ docker-compose up --build -d mongodb
 
 ### 4. Update Environments Variables
 
-#### 4.1 Update the ENV in the API folder
+#### 4.1 Update the ENV in the API's folder
 Rename the `.env.example` file under `/apps/api` to `.env` and update it with the following Mongo URI:
 
 ```
 MONGO_URI="mongodb://test:test@localhost:27017/testdb"
 ```
-#### 4.2 Update the ENV in the projects root folder
+#### 4.2 Update the ENV in the project's root folder
 
-Do the same for the `.env.example` file in repository root folder
+Do the same for the `.env.example` file in repository's root folder
 
 ```
 MONGO_URI="mongodb://test:test@localhost:27017/testdb"
@@ -127,7 +127,7 @@ emulator-5554   device
 ```
 In this case the emulator's UDID is `emulator-5554`
 
-After that, go to the repository root folder and start the Appium server by running the following command
+After that, go to the repository's root folder and start the Appium server by running the following command
 
 ```
 ~/robot-framework-appium 
